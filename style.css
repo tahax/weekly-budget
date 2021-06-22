@@ -1,0 +1,531 @@
+@font-face {
+    font-family: 'iranyekanbold';
+    font-style: normal;
+    font-weight: bold;
+    src: url("fonts/iranYekan/492984b8.woff");
+}
+
+@font-face {
+    font-family: 'bbadr';
+    font-style: normal;
+    font-weight: bold;
+    src: url("fonts/bbadr/BBadr.woff");
+}
+
+@font-face {
+    font-family: 'light';
+    font-style: normal;
+    font-weight: bold;
+    src: url("fonts/iranYekan/a80f71ff.woff2");
+}
+
+@keyframes fadeInUpBig {
+    0% {
+        opacity: 0;
+        -webkit-transform: translateY(20px);
+        -ms-transform: translateY(20px);
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+    }
+}
+
+.tak-iranyekan-bold {
+    font-family: iranyekanbold;
+}
+
+.tak-iranyekan-light {
+    font-family: light;
+}
+
+.fadeInUpBig {
+    -webkit-animation-name: fadeInUpBig;
+    animation-name: fadeInUpBig;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.tak-menu-1a {
+    animation-delay: 0.5s;
+}
+
+.tak-menu-2a {
+    animation-delay: 0.7s;
+}
+
+.tak-menu-3a {
+    animation-delay: 0.9s;
+}
+
+.tak-menu-4a {
+    animation-delay: 1.1s;
+}
+
+.tak-menu-5a {
+    animation-delay: 1.3s;
+}
+
+.tak-menu-6a {
+    animation-delay: 1.5s;
+}
+
+.tak-menu-7a {
+    animation-delay: 1.7s;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    direction: rtl;
+}
+
+a {
+    text-decoration: none;
+}
+
+.f3f3f3 {
+    background-color: #f7f7f7;
+}
+
+.f5f5f5 {
+    background-color: #f3f3f3;
+}
+
+.tak-padding {
+    padding: 5px;
+}
+
+.tak-padding-ghovato-zaf {
+    padding-left: 15px;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: #f5af31;
+}
+
+::selection {
+    color: #fff;
+    background: #f5af31;
+}
+
+/*****************************/
+/*progress all*/
+.progress-container {
+    width: 100%;
+    direction: ltr;
+    position: fixed;
+    height: 8px;
+    z-index: 901;
+}
+
+.progress-bar {
+    height: 4px;
+    background-image: linear-gradient(#C38209 0%, #F9D38A 35%, #f5af31 100%);
+    border-radius: 10px;
+    width: 0%;
+}
+
+/*//progress all*/
+/*header*/
+.header-alaki {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+}
+
+.tak-header-wide {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 5px 40px -33px #000;
+    background-color: rgba(250, 250, 250, 0.9);
+    z-index: 900;
+}
+
+.tak-header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.tak-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tak-menu-line {
+    width: 30px;
+    height: 3px;
+    background-color: #313131;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    transition: 0.1s;
+}
+
+.t2-line {
+    position: relative;
+    background-color: transparent !important;
+}
+
+.t1-line-ab, .t2-line-ab {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #eee;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.tak-logo-vs-name {
+    height: 100%;
+    color: #313131;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend Tera', sans-serif;
+    font-size: 18px;
+}
+
+.tak-logo {
+    height: 70%;
+    padding-right: 20px;
+}
+
+/*//header*/
+/*menu*/
+.tak-menu-div {
+    width: 100%;
+    height: 100%;
+    z-index: 800;
+    top: calc(-100% + 70px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.tak-menu-a {
+    font-family: iranyekanbold;
+    font-size: 18px;
+    color: #313131;
+    padding-bottom: 18px;
+    opacity: 0;
+    scroll-behavior: smooth;
+}
+
+
+/*//menu*/
+/*article-note*/
+/*get-weekly-budget*/
+.get-weekly-budget {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    z-index: 899;
+}
+
+.tak-div-get-value {
+    width: 100%;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    outline: none;
+}
+
+.tak-get-value {
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    outline: none;
+}
+
+.tak-get-value-name {
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    outline: none;
+}
+
+.tak-get-value-money{
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    outline: none;
+}
+
+.tak-get-value-name,.tak-get-value-money,.tak-get-value::placeholder {
+    font-family: light;
+}
+
+.tak-submit-weekly {
+    width: 100%;
+    padding: 11px 0;
+    border: none;
+    background-color: #F5AF31;
+    color: #fff;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.tak-submit-weekly:hover {
+    background-color: #d69929;
+    transition: 0.3s;
+}
+
+.tak-submit-weekly:focus {
+    outline: none;
+}
+
+
+/*get-weekly-budget*/
+.article-note {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 50px 0;
+    position: relative;
+    opacity: 1;
+}
+
+.tak-inner-col {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 15px;
+    background-color: #f8f8f8;
+}
+
+.tak-boje-kol {
+    width: 100%;
+    background-color: #6286ba;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.mablaghe-boje-kol {
+    padding: 0 15px;
+}
+
+.tak-boje-baghimande {
+    width: 100%;
+    background-color: #11a500;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 10px;
+}
+
+.mablaghe-baghimande {
+    padding: 0 15px;
+}
+.parent-makharej-show-result{
+    width: 100%;
+}
+.makharej-show-result{
+    width: 100%;
+    padding: 13px;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    color: #313131;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.showalert{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 100px;
+    opacity: 0;
+    z-index: 901;
+}
+
+.alertBox{
+    padding: 15px 50px;
+    box-shadow: 0 0 20px -5px #000;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #cd0b0b;
+}
+
+.accept-box{
+    padding: 15px 50px;
+    box-shadow: 0 0 20px -5px #000;
+    color: #fff;
+    border-radius: 10px;
+    background-color: #23c300;
+}
+/*//article-note*/
+/*footer*/
+
+.tak-footer-wide {
+    width: 100%;
+    padding: 50px 0;
+    background-color: #313131;
+    background-image: url("images/Tortoise-Shell1.svg");
+}
+
+.tak-footer-inner {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tak-footer-title {
+    text-align: center;
+    font-family: iranyekanbold;
+    font-size: 30px;
+    color: #fff;
+}
+
+.tak-hr-footer {
+    width: 100px;
+    height: 3px !important;
+    background-color: #F5AF31;
+    border-radius: 15px;
+    opacity: 1;
+    margin-bottom: 40px;
+}
+
+.tak-footer-button {
+    font-family: iranyekanbold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #F5AF31;
+    color: #fff;
+}
+
+/*//footer*/
+
+
+/* if backdrop support: very transparent and blurred */
+@supports ((-webkit-backdrop-filter: blur(2em)) or (backdrop-filter: blur(2em))) {
+    .tak-header-wide {
+        position: fixed;
+        width: 100%;
+        box-shadow: 0 5px 40px -33px #000;
+        background-color: unset;
+        backdrop-filter: blur(10px);
+        z-index: 900;
+        mix-blend-mode: exclusion;
+    }
+
+    .tak-menu-line {
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        margin-bottom: 5px;
+        border-radius: 20px;
+    }
+
+    .tak-logo-vs-name {
+        height: 100%;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Lexend Tera', sans-serif;
+        font-size: 18px;
+    }
+
+    .tak-scroll-behavior {
+        width: 50px;
+        height: 50px;
+        position: fixed;
+        bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+        background-color: unset;
+        box-shadow: 0 0 10px -8px #000;
+        scroll-behavior: smooth;
+        z-index: 500;
+    }
+
+    .tak-menu-div {
+        width: 100%;
+        height: 100%;
+        z-index: 800;
+        top: calc(-100% + 70px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        transition: 0.5s;
+    }
+
+    .tak-menu-a {
+        font-family: iranyekanbold;
+        font-size: 18px;
+        color: #ddd;
+        padding-bottom: 18px;
+        opacity: 0;
+    }
+
+    .tak-scroller-arrow {
+        transform: rotate(270deg);
+        width: 50%;
+        mix-blend-mode: difference;
+    }
+}
+
+
+.opacity-come {
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.opacity-out {
+    opacity: 0;
+    transition: 0.3s;
+}
